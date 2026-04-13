@@ -45,8 +45,8 @@ export default function VideoCard({ embedIframe, type }: VideoCardProps) {
       
       {isVisible && (
         <div 
-          className="absolute inset-0 w-full h-full [&>iframe]:w-full [&>iframe]:h-full border-none [&>iframe]:border-none"
-          dangerouslySetInnerHTML={{ __html: embedIframe }}
+          className="absolute inset-0 w-full h-full [&>iframe]:w-full [&>iframe]:h-full border-none [&>iframe]:border-none [&>iframe]:pointer-events-auto"
+          dangerouslySetInnerHTML={{ __html: embedIframe.replace('<iframe ', '<iframe scrolling="no" style="overflow: hidden; width: 100%; height: 100%;" ') }}
         />
       )}
     </div>
