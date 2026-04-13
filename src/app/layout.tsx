@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className="scroll-smooth">
-      <body className={`${inter.variable} ${bebas.variable} antialiased bg-wero-bg text-wero-accent min-h-screen font-sans`}>
+      <body className={`${inter.variable} ${bebas.variable} antialiased bg-[#CDCCC8] text-wero-accent min-h-screen font-sans`}>
         {children}
       </body>
     </html>
