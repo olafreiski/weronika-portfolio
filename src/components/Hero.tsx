@@ -2,44 +2,98 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="max-w-[1400px] mx-auto px-4 md:px-8 py-12 md:py-24">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        
-        {/* Left Column - Typography & Image */}
-        <div className="lg:col-span-8 flex flex-col items-start w-full relative">
-          <h1 className="font-bebas text-fluid-h1 text-wero-accent uppercase tracking-tighter w-full leading-none group z-10 mix-blend-multiply">
-            <span className="block hover:translate-x-4 transition-transform duration-300">WERONIKA</span>
-            <span className="block text-right hover:-translate-x-4 transition-transform duration-300">TARGOŃSKA</span>
-          </h1>
+    <section className="relative w-full h-[100dvh] min-h-[750px] bg-[#CDCCC8] overflow-hidden flex flex-col items-center justify-center font-sans">
+      
+      {/* Central content container */}
+      <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center flex-1">
 
-          <div className="w-full max-w-sm md:max-w-md mt-[-8%] md:mt-[-12%] self-center lg:self-start grayscale hover:grayscale-0 transition-all duration-500 z-0">
-            <div className="aspect-[4/5] relative bg-neutral-300 overflow-hidden w-full">
-              <Image 
-                src="/hero-placeholder.jpg" 
-                alt="Weronika Targońska"
-                fill
-                className="object-cover"
-                sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
-                priority
-              />
-            </div>
+        {/* The Image Layer (Behind Typography) */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] sm:w-[50vw] md:w-[380px] lg:w-[480px] aspect-[4/5] z-10 select-none">
+          <Image 
+            src="/hero-placeholder.jpg" 
+            alt="Weronika Targońska"
+            fill
+            className="object-cover grayscale"
+            priority
+          />
+        </div>
+
+        {/* Typography Text (Layer 2 - Overlaps Image) */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[52%] z-20 w-full flex flex-col items-center pointer-events-none">
+          
+          <div className="relative flex justify-center w-full">
+            <h1 className="text-[25vw] md:text-[200px] lg:text-[270px] font-black leading-[0.75] tracking-tight text-[#2B30FF] m-0 p-0 flex justify-center items-center">
+              <span>W</span><span>E</span><span>R</span>
+              <span className="relative flex justify-center">
+                O
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[0.3em] h-[0.3em] bg-[#2B30FF] rounded-full flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" className="w-[60%] h-[60%] text-[#CDCCC8]" stroke="currentColor" strokeWidth="4" strokeLinecap="round">
+                      <path d="M6 6l12 12M6 18L18 6" />
+                    </svg>
+                  </div>
+                </div>
+              </span>
+            </h1>
+          </div>
+          
+          <div className="flex justify-center z-30 text-white font-medium text-xs sm:text-sm md:text-xl tracking-wide my-2 md:my-1 lg:pb-3">
+            creative portfolio
+          </div>
+
+          <div className="relative flex justify-center w-full">
+            <h1 
+              className="text-[25vw] md:text-[200px] lg:text-[270px] font-black leading-[0.75] tracking-tight text-transparent m-0 p-0 flex justify-center items-center"
+              style={{ WebkitTextStroke: '2px #2B30FF' }}
+            >
+              NIKA
+            </h1>
+          </div>
+
+        </div>
+
+        {/* Right side list */}
+        <div className="absolute right-4 sm:right-8 md:right-[8%] lg:right-[15%] top-[60%] md:top-1/2 -translate-y-1/2 z-30 flex flex-col items-end gap-[6px] md:gap-3 text-[#2B30FF]">
+          
+          <div className="flex items-end gap-1 md:gap-2 group cursor-pointer">
+            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">CONTENT CREATION</span>
+            <span className="text-lg md:text-4xl font-black leading-none text-[#2B30FF]">!</span>
+          </div>
+          
+          <div className="flex items-end gap-1 group cursor-pointer mr-2 md:mr-6">
+            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">COPYWRITING</span>
+          </div>
+          
+          <div className="flex items-center gap-1 group cursor-pointer">
+            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">SOCIAL MEDIA</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 md:w-6 md:h-6 -translate-y-[1px]">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          
+          <div className="flex items-end gap-1 group cursor-pointer">
+            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none">CREATIVE DIRECTION</span>
+          </div>
+          
+          <div className="mt-2 text-[#2B30FF] mr-1 md:mr-3">
+            <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" className="w-[70px] md:w-[110px]">
+              <path d="M5 10 Q 40 0 85 8 M 10 22 Q 50 15 90 22 M 20 34 Q 55 25 80 32" />
+            </svg>
           </div>
         </div>
 
-        {/* Right Column - Services & Bio */}
-        <div className="lg:col-span-4 flex flex-col gap-12 pt-8 lg:pt-24 h-full z-10 w-full relative">
-          <ul className="flex flex-col gap-4 font-bebas text-3xl md:text-5xl text-wero-accent border-l-4 border-wero-accent pl-6 py-2">
-            <li className="hover:translate-x-2 transition-transform cursor-default">DIGITAL HOST</li>
-            <li className="hover:translate-x-2 transition-transform cursor-default">COPYWRITING</li>
-            <li className="hover:translate-x-2 transition-transform cursor-default">CREATIVE DIRECTION</li>
-            <li className="hover:translate-x-2 transition-transform cursor-default">CONTENT CREATION</li>
-          </ul>
-
-          <p className="font-sans text-xl md:text-2xl font-semibold leading-relaxed max-w-md">
-            „do matury nie wiedziałam kim zostanę jak będę dorosła. potem dowiedziałam się, że można wymyślać pomysły za pieniądze.”
-          </p>
-        </div>
       </div>
+
+      {/* Bottom text */}
+      <div className="absolute bottom-6 md:bottom-12 w-full text-center z-30 px-4 flex flex-col gap-1 text-white">
+        <p className="text-[10px] sm:text-sm md:text-lg font-light tracking-wide">
+          do matury nie wiedziałam kim zostanę jak będę dorosła.
+        </p>
+        <p className="text-[10px] sm:text-sm md:text-lg font-light tracking-wide">
+          potem dowiedziałam się, że można wymyślać pomysły za pieniądze.
+        </p>
+      </div>
+
     </section>
   );
 }
