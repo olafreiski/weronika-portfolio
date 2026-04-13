@@ -29,7 +29,7 @@ export default function VideoCard({ embedIframe, type }: VideoCardProps) {
     return () => observer.disconnect();
   }, []);
 
-  const aspectRatioClass = type === "VERTICAL" ? "aspect-[9/16]" : "aspect-video";
+  const aspectRatioClass = type === "VERTICAL" ? "h-[600px] lg:h-[650px]" : "aspect-video";
   const maxWidthClass = type === "VERTICAL" ? "w-full lg:max-w-[340px]" : "w-full";
 
   return (
