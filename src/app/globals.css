@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-wero-bg: #e8e8e2;
+  --color-wero-bg: #CDCCC8;
   --color-wero-accent: #1a1aff;
   --color-wero-dark: #121212;
   --font-sans: var(--font-inter);
