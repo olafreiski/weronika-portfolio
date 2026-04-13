@@ -70,19 +70,19 @@ export default function SectionRealizacje() {
              <div className="flex flex-wrap lg:flex-nowrap justify-center items-center lg:items-start lg:h-[750px] gap-8 lg:gap-6 w-full px-4 lg:px-12 relative z-10 lg:pl-[250px] xl:pl-[350px]">
                 
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[260px] shadow-2xl transition-transform">
-                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/111" loading="lazy"></iframe>' type="VERTICAL" />
+                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/7541051110618926358" loading="lazy"></iframe>' type="VERTICAL" />
                  </div>
                  
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[40px] shadow-xl transition-transform">
-                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/222" loading="lazy"></iframe>' type="VERTICAL" />
+                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/7610337499444940054" loading="lazy"></iframe>' type="VERTICAL" />
                  </div>
                  
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[130px] shadow-2xl transition-transform">
-                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/333" loading="lazy"></iframe>' type="VERTICAL" />
+                   <VideoCard embedIframe='<iframe src="https://www.instagram.com/reel/C_ne44goaki/embed/" loading="lazy" frameborder="0" scrolling="no" allowtransparency="true"></iframe>' type="VERTICAL" />
                  </div>
                  
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[20px] shadow-xl transition-transform">
-                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/444" loading="lazy"></iframe>' type="VERTICAL" />
+                   <VideoCard embedIframe='<iframe src="https://www.instagram.com/reel/DDHyhSrvFjR/embed/" loading="lazy" frameborder="0" scrolling="no" allowtransparency="true"></iframe>' type="VERTICAL" />
                  </div>
 
              </div>
