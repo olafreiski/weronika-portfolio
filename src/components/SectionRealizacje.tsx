@@ -70,7 +70,7 @@ export default function SectionRealizacje() {
              <div className="flex flex-wrap lg:flex-nowrap justify-center items-center lg:items-start lg:h-[750px] gap-8 lg:gap-6 w-full px-4 lg:px-12 relative z-10 lg:pl-[250px] xl:pl-[350px]">
                 
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[260px] shadow-2xl transition-transform">
-                   <VideoCard embedIframe='<iframe src="https://www.tiktok.com/embed/v2/7541051110618926358" loading="lazy"></iframe>' type="VERTICAL" />
+                   <VideoCard videoSrc="/test.mp4" type="VERTICAL" />
                  </div>
                  
                  <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[40px] shadow-xl transition-transform">

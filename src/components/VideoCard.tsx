@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 
 interface VideoCardProps {
-  embedIframe: string;
+  embedIframe?: string;
+  videoSrc?: string;
   type: "VERTICAL" | "HORIZONTAL";
 }
 
-export default function VideoCard({ embedIframe, type }: VideoCardProps) {
+export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -43,12 +44,21 @@ export default function VideoCard({ embedIframe, type }: VideoCardProps) {
         </div>
       )}
       
-      {isVisible && (
+      {isVisible && videoSrc ? (
+        <video 
+          src={videoSrc}
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      ) : isVisible && embedIframe ? (
         <div 
           className="absolute inset-0 w-full h-full [&>iframe]:w-full [&>iframe]:h-full border-none [&>iframe]:border-none [&>iframe]:pointer-events-auto"
           dangerouslySetInnerHTML={{ __html: embedIframe.replace('<iframe ', '<iframe scrolling="no" style="overflow: hidden; width: 100%; height: 100%;" ') }}
         />
-      )}
+      ) : null}
     </div>
   );
 }
