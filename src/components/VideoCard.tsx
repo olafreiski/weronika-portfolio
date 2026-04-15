@@ -11,6 +11,7 @@ interface VideoCardProps {
 export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // added state for hover
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,6 +38,8 @@ export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProp
     <div 
       ref={containerRef} 
       className={`relative bg-neutral-200 overflow-hidden ${aspectRatioClass} ${maxWidthClass} mx-auto`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       {!isVisible && (
         <div className="absolute inset-0 flex items-center justify-center animate-pulse bg-neutral-300">
@@ -52,7 +55,7 @@ export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProp
           muted
           loop
           playsInline
-          controls
+          controls={isHovered}
         />
       ) : isVisible && embedIframe ? (
         <div 
