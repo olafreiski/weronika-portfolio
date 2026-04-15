@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 interface VideoCardProps {
   embedIframe?: string;
   videoSrc?: string;
-  type: "VERTICAL" | "HORIZONTAL";
+  type: "VERTICAL" | "HORIZONTAL" | "AUTO";
 }
 
 export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProps) {
@@ -30,13 +30,13 @@ export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProp
     return () => observer.disconnect();
   }, []);
 
-  const aspectRatioClass = type === "VERTICAL" ? "h-[600px] lg:h-[650px]" : "aspect-video";
-  const maxWidthClass = type === "VERTICAL" ? "w-full lg:max-w-[340px]" : "w-full";
+  const aspectRatioClass = type === "VERTICAL" ? "h-[600px] lg:h-[650px]" : type === "HORIZONTAL" ? "aspect-video" : "";
+  const maxWidthClass = type === "VERTICAL" ? "w-full lg:max-w-[340px]" : type === "HORIZONTAL" ? "w-full" : "w-full h-full flex items-center justify-center";
 
   return (
     <div 
       ref={containerRef} 
-      className={`relative bg-neutral-200 overflow-hidden ${aspectRatioClass} ${maxWidthClass} mx-auto transition-transform hover:-translate-y-2`}
+      className={`relative bg-neutral-200 overflow-hidden ${aspectRatioClass} ${maxWidthClass} mx-auto`}
     >
       {!isVisible && (
         <div className="absolute inset-0 flex items-center justify-center animate-pulse bg-neutral-300">
@@ -47,11 +47,12 @@ export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProp
       {isVisible && videoSrc ? (
         <video 
           src={videoSrc}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={type === "AUTO" ? "w-full h-auto max-h-[750px] object-contain block" : "absolute inset-0 w-full h-full object-cover"}
           autoPlay
           muted
           loop
           playsInline
+          controls
         />
       ) : isVisible && embedIframe ? (
         <div 

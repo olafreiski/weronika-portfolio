@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import SectionRealizacje from "@/components/SectionRealizacje";
 import SectionKlienci from "@/components/SectionKlienci";
-import SectionFeedback from "@/components/SectionFeedback";
+
 import SectionContact from "@/components/SectionContact";
 import FloatingButton from "@/components/FloatingButton";
 
@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <main className="w-full">
         <Hero />
-        <SectionRealizacje />
         <SectionKlienci />
-        <SectionFeedback />
+        <SectionRealizacje />
+
         <SectionContact />
       </main>
       <FloatingButton />
