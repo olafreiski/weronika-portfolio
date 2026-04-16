@@ -16,9 +16,14 @@ export default function Hero() {
             className="object-cover grayscale"
             priority
           />
-          {/* Creative portfolio text specifically locked right under the image */}
-          <div className="absolute -bottom-8 md:-bottom-12 w-full flex justify-center z-30 text-white font-medium text-xs sm:text-sm md:text-xl tracking-wide lg:-ml-[10%] pointer-events-none">
-            creative portfolio
+          {/* Matura text placed directly beneath the image */}
+          <div className="absolute -bottom-16 md:-bottom-24 left-1/2 -translate-x-1/2 w-[95vw] md:w-max text-center z-30 flex flex-col gap-1 text-white pointer-events-none drop-shadow-md">
+            <p className="text-[11px] sm:text-[16px] md:text-[22px] font-medium tracking-wide">
+              do matury nie wiedziałam kim zostanę jak będę dorosła.
+            </p>
+            <p className="text-[11px] sm:text-[16px] md:text-[22px] font-medium tracking-wide">
+              potem dowiedziałam się, że można wymyślać pomysły za pieniądze.
+            </p>
           </div>
         </div>
 
@@ -40,6 +45,9 @@ export default function Hero() {
             </h1>
           </div>
 
+          <div className="flex justify-center z-30 text-white font-medium text-xs sm:text-sm md:text-xl tracking-wide mt-4 md:mt-8 lg:mt-12 w-full lg:-ml-[10%]">
+            creative portfolio
+          </div>
         </div>
 
         {/* Right side list */}
@@ -74,15 +82,7 @@ export default function Hero() {
 
       </div>
 
-      {/* Bottom text */}
-      <div className="absolute bottom-6 md:bottom-12 w-full text-center z-30 px-4 flex flex-col gap-1 text-white">
-        <p className="text-xs sm:text-[17px] md:text-[22px] font-medium tracking-wide">
-          do matury nie wiedziałam kim zostanę jak będę dorosła.
-        </p>
-        <p className="text-xs sm:text-[17px] md:text-[22px] font-medium tracking-wide">
-          potem dowiedziałam się, że można wymyślać pomysły za pieniądze.
-        </p>
-      </div>
+
 
     </section>
   );
