@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center flex-1">
 
         {/* The Image Layer (Behind Typography) */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] sm:w-[50vw] md:w-[380px] lg:w-[480px] aspect-[4/5] z-10 select-none">
+        <div className="absolute top-[35%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] sm:w-[50vw] md:w-[380px] lg:w-[480px] aspect-[4/5] z-10 select-none">
           <Image
             src="/wero-bg.png"
             alt="Weronika Targońska"
@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
 
         {/* Typography Text (Layer 2 - Overlaps Image) */}
-        <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-[52%] z-20 w-full flex flex-col items-center pointer-events-none">
+        <div className="absolute top-[18%] md:top-[30%] left-1/2 -translate-x-1/2 -translate-y-[52%] z-20 w-full flex flex-col items-center pointer-events-none">
 
           <div className="relative flex justify-center w-full">
             <h1 className="text-[25vw] md:text-[200px] lg:text-[270px] font-extrabold leading-[0.75] tracking-normal text-[#2B30FF] m-0 p-0 flex justify-center items-center">
@@ -43,7 +43,7 @@ export default function Hero() {
         </div>
 
         {/* Right side list */}
-        <div className="absolute right-4 sm:right-8 md:right-[5%] lg:right-[10%] top-[68%] md:top-[65%] -translate-y-1/2 z-30 flex flex-col items-end gap-[6px] md:gap-3 text-[#2B30FF]">
+        <div className="absolute right-4 sm:right-8 md:right-[5%] lg:right-[10%] top-[60%] md:top-[65%] -translate-y-1/2 z-30 flex flex-col items-end gap-[6px] md:gap-3 text-[#2B30FF]">
 
           <div className="flex items-end gap-1 md:gap-2 group cursor-pointer">
             <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">CONTENT CREATION</span>
