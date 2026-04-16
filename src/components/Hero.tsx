@@ -16,6 +16,10 @@ export default function Hero() {
             className="object-cover grayscale"
             priority
           />
+          {/* Creative portfolio text specifically locked right under the image */}
+          <div className="absolute -bottom-8 md:-bottom-12 w-full flex justify-center z-30 text-white font-medium text-xs sm:text-sm md:text-xl tracking-wide lg:-ml-[10%] pointer-events-none">
+            creative portfolio
+          </div>
         </div>
 
         {/* Typography Text (Layer 2 - Overlaps Image) */}
@@ -34,10 +38,6 @@ export default function Hero() {
             >
               NIKA
             </h1>
-          </div>
-
-          <div className="flex justify-center z-30 text-white font-medium text-xs sm:text-sm md:text-xl tracking-wide mt-4 md:mt-8 lg:mt-12 w-full lg:-ml-[10%]">
-            creative portfolio
           </div>
 
         </div>
