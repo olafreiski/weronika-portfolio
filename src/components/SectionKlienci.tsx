@@ -20,7 +20,7 @@ export default function SectionKlienci() {
     <section id="klienci" className="py-4 md:py-6 bg-wero-accent overflow-hidden flex flex-col justify-center border-y border-wero-accent/10">
       <h2 className="sr-only">Klienci</h2>
       <div className="relative w-full flex overflow-hidden group">
-        <div className="flex whitespace-nowrap animate-[marquee_30s_linear_infinite] motion-reduce:animate-none">
+        <div className="flex whitespace-nowrap animate-[marquee_30s_linear_infinite]">
           {[...brands, ...brands, ...brands, ...brands].map((brand, i) => (
             <div key={i} className="flex items-center shrink-0">
               <div className="flex flex-col justify-center px-12 md:px-20">
