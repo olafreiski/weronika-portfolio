@@ -268,19 +268,6 @@ export default function SectionRealizacje() {
                   LINK
                 </a>
               </div>
-              <div className="w-full sm:w-[45%] lg:flex-1 lg:max-w-[340px] lg:mt-[280px]">
-                <div className="shadow-xl transition-transform w-full">
-                  <VideoCard videoSrc="/filmik9.mp4" type="AUTO" />
-                </div>
-                <a
-                  href="https://www.instagram.com/reels/DDmqy0aCzVM/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-4 mb-12 lg:mb-0 text-center font-sans font-bold text-[#2B30FF] text-lg uppercase underline decoration-2 underline-offset-4 hover:opacity-75 transition-opacity"
-                >
-                  LINK
-                </a>
-              </div>
             </div>
           </div>
         </div>
