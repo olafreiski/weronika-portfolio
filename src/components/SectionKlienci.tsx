@@ -11,7 +11,9 @@ export default function SectionKlienci() {
     { name: "Surf.inc", category: "Fashion" },
     { name: "Meloradio", category: "Radio" },
     { name: "Dawtona", category: "FMCG" },
-    { name: "Bandit", category: "Lifestyle" }
+    { name: "Bandit", category: "Lifestyle" },
+    { name: "Allegro", category: "E-commerce" },
+    { name: "SAR", category: "Marketing Communication Association" }
   ];
   
   return (
