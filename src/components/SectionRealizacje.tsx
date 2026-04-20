@@ -218,13 +218,6 @@ export default function SectionRealizacje() {
                 </div>
               </div>
 
-              {/* Hand-drawn decoration - Hearts on bottom left */}
-              <div className="absolute -bottom-20 -left-4 w-20 h-16 text-[#2B30FF] pointer-events-none z-0">
-                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
-                  <path d="M 30 40 C 30 20, 55 20, 55 40 C 55 55, 30 80, 30 80 C 30 80, 5 55, 5 40 C 5 20, 30 20, 30 40 Z" transform="scale(0.5) translate(0, 40) rotate(-10)" />
-                  <path d="M 30 40 C 30 20, 55 20, 55 40 C 55 55, 30 80, 30 80 C 30 80, 5 55, 5 40 C 5 20, 30 20, 30 40 Z" transform="scale(0.8) translate(50, 40) rotate(15)" />
-                </svg>
-              </div>
 
               {/* Hand-drawn decoration - Wire on right and bottom */}
               <div className="absolute top-24 -right-12 w-32 h-[120%] text-[#2B30FF] pointer-events-none z-0 hidden lg:block overflow-visible">
