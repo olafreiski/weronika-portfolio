@@ -51,12 +51,12 @@ export default function Hero() {
           </div>
 
           {/* Matura text placed below blue texts */}
-          <div className="text-center z-30 flex flex-col gap-1 text-white pointer-events-none drop-shadow-md">
-            <p className="text-[11px] sm:text-[16px] md:text-[22px] font-medium tracking-wide">
-              do matury nie wiedziałam kim zostanę jak będę dorosła.
+          <div className="text-center z-30 flex flex-col gap-1 sm:gap-2 text-white pointer-events-none drop-shadow-md mt-2">
+            <p className="text-[13px] sm:text-[18px] md:text-[26px] font-medium tracking-wide">
+              Do matury nie wiedziałam kim zostanę jak będę dorosła.
             </p>
-            <p className="text-[11px] sm:text-[16px] md:text-[22px] font-medium tracking-wide">
-              potem dowiedziałam się, że można wymyślać pomysły za pieniądze.
+            <p className="text-[13px] sm:text-[18px] md:text-[26px] font-medium tracking-wide">
+              Potem dowiedziałam się, że można wymyślać pomysły za pieniądze.
             </p>
           </div>
         </div>
