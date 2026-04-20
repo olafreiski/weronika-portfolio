@@ -7,17 +7,51 @@ export default function Hero() {
       {/* Central content container */}
       <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center flex-1">
 
-        {/* The Image Layer (Behind Typography) */}
-        <div className="absolute top-[35%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] sm:w-[50vw] md:w-[380px] lg:w-[480px] aspect-[4/5] z-10 select-none">
-          <Image
-            src="/wero-bg.png"
-            alt="Weronika Targońska"
-            fill
-            className="object-cover grayscale"
-            priority
-          />
-          {/* Matura text placed directly beneath the image */}
-          <div className="absolute -bottom-16 md:-bottom-24 left-1/2 -translate-x-1/2 w-[95vw] md:w-max text-center z-30 flex flex-col gap-1 text-white pointer-events-none drop-shadow-md">
+        {/* Central Content Stack (Image + Texts) */}
+        <div className="absolute top-[48%] sm:top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-6 sm:gap-8 z-10 w-[95vw] sm:w-[50vw] md:w-max mt-4 sm:mt-0">
+          
+          {/* The Image Layer */}
+          <div className="relative w-[70vw] sm:w-[50vw] md:w-[380px] lg:w-[480px] aspect-[4/5] select-none shrink-0">
+            <Image
+              src="/wero-bg.png"
+              alt="Weronika Targońska"
+              fill
+              className="object-cover grayscale"
+              priority
+            />
+          </div>
+
+          {/* Blue texts below image */}
+          <div className="z-30 flex flex-col items-center gap-[6px] md:gap-2 text-[#2B30FF]">
+            <div className="flex items-end gap-1 md:gap-2 group cursor-pointer">
+              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">CONTENT CREATION</span>
+              <span className="text-lg md:text-4xl font-black leading-none text-[#2B30FF]">!</span>
+            </div>
+
+            <div className="flex items-end gap-1 group cursor-pointer">
+              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">COPYWRITING</span>
+            </div>
+
+            <div className="flex items-center gap-1 group cursor-pointer">
+              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">SOCIAL MEDIA</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 md:w-6 md:h-6 -translate-y-[1px]">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+
+            <div className="flex items-end gap-1 group cursor-pointer">
+              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none">CREATIVE DIRECTION</span>
+            </div>
+
+            <div className="mt-1 text-[#2B30FF]">
+              <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" className="w-[70px] md:w-[110px]">
+                <path d="M5 10 Q 40 0 85 8 M 10 22 Q 50 15 90 22 M 20 34 Q 55 25 80 32" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Matura text placed below blue texts */}
+          <div className="text-center z-30 flex flex-col gap-1 text-white pointer-events-none drop-shadow-md">
             <p className="text-[11px] sm:text-[16px] md:text-[22px] font-medium tracking-wide">
               do matury nie wiedziałam kim zostanę jak będę dorosła.
             </p>
@@ -50,35 +84,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right side list */}
-        <div className="absolute right-4 sm:right-8 md:right-[5%] lg:right-[10%] top-[60%] md:top-[65%] -translate-y-1/2 z-30 flex flex-col items-end gap-[6px] md:gap-3 text-[#2B30FF]">
 
-          <div className="flex items-end gap-1 md:gap-2 group cursor-pointer">
-            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">CONTENT CREATION</span>
-            <span className="text-lg md:text-4xl font-black leading-none text-[#2B30FF]">!</span>
-          </div>
-
-          <div className="flex items-end gap-1 group cursor-pointer mr-2 md:mr-6">
-            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">COPYWRITING</span>
-          </div>
-
-          <div className="flex items-center gap-1 group cursor-pointer">
-            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">SOCIAL MEDIA</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 md:w-6 md:h-6 -translate-y-[1px]">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-            </svg>
-          </div>
-
-          <div className="flex items-end gap-1 group cursor-pointer">
-            <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none">CREATIVE DIRECTION</span>
-          </div>
-
-          <div className="mt-2 text-[#2B30FF] mr-1 md:mr-3">
-            <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" className="w-[70px] md:w-[110px]">
-              <path d="M5 10 Q 40 0 85 8 M 10 22 Q 50 15 90 22 M 20 34 Q 55 25 80 32" />
-            </svg>
-          </div>
-        </div>
 
       </div>
 
