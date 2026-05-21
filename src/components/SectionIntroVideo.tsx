@@ -21,7 +21,7 @@ export default function SectionIntroVideo() {
         
         {/* Left Side: Video (Horizontal, large) */}
         <div className="w-full md:w-[60%] lg:w-[65%] shadow-2xl rounded-2xl overflow-hidden border-4 border-[#2B30FF] bg-[#CDCCC8] shrink-0">
-          <VideoCard videoSrc="/wideo-intro.mp4" type="HORIZONTAL" />
+          <VideoCard videoSrc="/wideo-intro.mp4" type="HORIZONTAL" muted={false} />
         </div>
 
         {/* Right Side: Blue Texts */}

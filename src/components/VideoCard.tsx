@@ -6,9 +6,10 @@ interface VideoCardProps {
   embedIframe?: string;
   videoSrc?: string;
   type: "VERTICAL" | "HORIZONTAL" | "AUTO";
+  muted?: boolean;
 }
 
-export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProps) {
+export default function VideoCard({ embedIframe, videoSrc, type, muted = true }: VideoCardProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false); // added state for hover
@@ -52,7 +53,7 @@ export default function VideoCard({ embedIframe, videoSrc, type }: VideoCardProp
           src={videoSrc}
           className={type === "AUTO" ? "w-full h-auto max-h-[750px] object-contain block" : "absolute inset-0 w-full h-full object-cover"}
           autoPlay
-          muted
+          muted={muted}
           loop
           playsInline
           controls={isHovered}
