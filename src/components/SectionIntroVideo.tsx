@@ -2,7 +2,7 @@ import VideoCard from "./VideoCard";
 
 function WavyDivider() {
   return (
-    <div className="w-full relative h-[60px] md:h-[100px] text-[#2B30FF] overflow-visible -mt-8 md:-mt-12 mb-8 md:mb-16">
+    <div className="w-full relative h-[60px] md:h-[100px] text-[#2B30FF] overflow-visible mt-8 md:mt-16 mb-8 md:mb-16">
       <svg viewBox="0 0 1200 100" preserveAspectRatio="none" className="w-full h-full overflow-visible" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round">
         <path d="M -50,50 Q 50,-10 150,50 C 200,80 250,90 280,30 C 310,-30 350,-10 380,50 Q 410,110 500,50 T 650,40 C 710,90 750,110 800,60 C 850,10 900,10 950,50 Q 1050,130 1250,50" />
       </svg>
