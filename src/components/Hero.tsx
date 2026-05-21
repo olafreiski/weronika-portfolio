@@ -20,38 +20,8 @@ export default function Hero() {
               priority
             />
           </div>
-
-          {/* Blue texts below image */}
-          <div className="z-30 flex flex-col items-center gap-[6px] md:gap-2 text-[#2B30FF]">
-            <div className="flex items-end gap-1 md:gap-2 group cursor-pointer">
-              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">CONTENT CREATION</span>
-              <span className="text-lg md:text-4xl font-black leading-none text-[#2B30FF]">!</span>
-            </div>
-
-            <div className="flex items-end gap-1 group cursor-pointer">
-              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">COPYWRITING</span>
-            </div>
-
-            <div className="flex items-center gap-1 group cursor-pointer">
-              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none mb-[2px] md:mb-[4px]">SOCIAL MEDIA</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 md:w-6 md:h-6 -translate-y-[1px]">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-              </svg>
-            </div>
-
-            <div className="flex items-end gap-1 group cursor-pointer">
-              <span className="text-[11px] sm:text-xs md:text-xl font-medium uppercase tracking-[0.05em] leading-none">CREATIVE DIRECTION</span>
-            </div>
-
-            <div className="mt-1 text-[#2B30FF]">
-              <svg viewBox="0 0 100 40" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" className="w-[70px] md:w-[110px]">
-                <path d="M5 10 Q 40 0 85 8 M 10 22 Q 50 15 90 22 M 20 34 Q 55 25 80 32" />
-              </svg>
-            </div>
-          </div>
-
-          {/* Matura text placed below blue texts */}
-          <div className="text-center z-30 flex flex-col gap-1 sm:gap-2 text-white pointer-events-none drop-shadow-md mt-2">
+          {/* Matura text placed below image */}
+          <div className="text-center z-30 flex flex-col gap-1 sm:gap-2 text-white pointer-events-none drop-shadow-md mt-4">
             <p className="text-[13px] sm:text-[18px] md:text-[26px] font-medium tracking-wide">
               Do matury nie wiedziałam kim zostanę jak będę dorosła.
             </p>
