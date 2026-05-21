@@ -1,8 +1,22 @@
 import VideoCard from "./VideoCard";
 
+function WavyDivider() {
+  return (
+    <div className="w-full relative h-[60px] md:h-[100px] text-[#2B30FF] overflow-visible -mt-8 md:-mt-12 mb-8 md:mb-16">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" className="w-full h-full overflow-visible" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M -50,40 Q 100,-10 250,40 C 350,70 420,10 500,40 T 750,30 C 850,70 950,-15 1050,40 Q 1150,70 1250,40" />
+      </svg>
+    </div>
+  );
+}
+
 export default function SectionIntroVideo() {
   return (
-    <section className="w-full bg-[#CDCCC8] py-16 md:py-24 flex items-center justify-center border-t border-wero-accent/10">
+    <section className="w-full bg-[#CDCCC8] pb-16 md:pb-24 flex flex-col items-center justify-center overflow-hidden">
+      
+      {/* Wavy divider line separating the sections */}
+      <WavyDivider />
+
       <div className="w-full max-w-7xl px-4 md:px-8 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-24">
         
         {/* Left Side: Video (Horizontal, large) */}
