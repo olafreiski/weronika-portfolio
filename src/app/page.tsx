@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import SectionIntroVideo from "@/components/SectionIntroVideo";
 import SectionRealizacje from "@/components/SectionRealizacje";
 import SectionKlienci from "@/components/SectionKlienci";
 
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <main className="w-full">
         <Hero />
+        <SectionIntroVideo />
         <SectionKlienci />
         <SectionRealizacje />
 
@@ -19,3 +21,4 @@ export default function Home() {
     </>
   );
 }
+
